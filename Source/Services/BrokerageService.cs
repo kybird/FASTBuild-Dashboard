@@ -7,7 +7,7 @@ namespace FastBuild.Dashboard.Services
 {
 	internal class BrokerageService : IBrokerageService
 	{
-		private const string WorkerPoolRelativePath = @"main\16";
+		private const string WorkerPoolRelativePath = @"main\22.windows";
 
 		private string[] _workerNames;
 
