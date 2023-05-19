@@ -191,7 +191,7 @@ namespace FastBuild.Dashboard.Services.Worker
 
 		private void InitializeWorker()
 		{
-			WinAPI.ShowWindow(_workerWindowPtr, WinAPI.ShowWindowCommands.SW_HIDE);
+			WinAPI.ShowWindow(_workerWindowPtr, WinAPI.ShowWindowCommands.NORMAL);
 			this.RemoveTrayIcon();
 
 			_workerProcessId = 1u;   // must not be NULL (0)
@@ -267,7 +267,7 @@ namespace FastBuild.Dashboard.Services.Worker
 
 		public void SetCoreCount(int coreCount)
 		{
-			var comboBoxPtr = this.GetChildWindow(3, "ComboBox");
+			var comboBoxPtr = this.GetChildWindow(5, "ComboBox");
 
 			if (comboBoxPtr == IntPtr.Zero)
 			{

@@ -32,7 +32,8 @@ namespace FastBuild.Dashboard.Services.Worker
 
 			public enum ShowWindowCommands
 			{
-				SW_HIDE = 0x0000
+				SW_HIDE = 0x0000,
+				NORMAL = 1,
 			}
 
 			public enum ListViewMessages
